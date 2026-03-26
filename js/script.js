@@ -31,7 +31,7 @@ function changeDarkMode() {
     if (myBody.classList.contains('bg-light', 'text-dark')) {
         myBody.classList.remove('bg-light', 'text-dark');
         myBody.classList.add('bg-dark', 'text-light');
-        myTitle.style.color = 'white';
+        myTitle.style.color = 'rgb(205, 134, 223)';
         for (let btn of allBtn) {
             btn.classList.remove('btn', 'btn-outline-dark');
             btn.classList.add('btn', 'btn-outline-light');
