@@ -12,6 +12,7 @@ let dogApiBtn = document.getElementById('dogApiBtn');
 let birdApiBtn = document.getElementById('birdApiBtn');
 let profileForm = document.getElementById('profileForm');
 let counterDisplay = document.getElementById('counterDisplay');
+let submitBtn = document.getElementById('SubmitBtn');
 
 
 function getRandomRgbColor() {
@@ -26,9 +27,25 @@ function changeDarkMode() {
     if (myBody.classList.contains('bg-light', 'text-dark')) {
         myBody.classList.remove('bg-light', 'text-dark');
         myBody.classList.add('bg-dark', 'text-light');
+        imgBtn.classList.remove('btn', 'btn-outline-dark');
+        imgBtn.classList.add('btn', 'btn-outline-light');
+        modeBtn.classList.remove('btn', 'btn-outline-dark');
+        modeBtn.classList.add('btn', 'btn-outline-light');
+        hobbyBtn.classList.remove('btn', 'btn-outline-dark');
+        hobbyBtn.classList.add('btn', 'btn-outline-light');
+        submitBtn.classList.remove('btn', 'btn-outline-dark');
+        submitBtn.classList.add('btn', 'btn-outline-light');
     } else {
         myBody.classList.remove('bg-dark', 'text-light');
         myBody.classList.add('bg-light', 'text-dark');
+        imgBtn.classList.remove('btn', 'btn-outline-light');
+        imgBtn.classList.add('btn', 'btn-outline-dark');
+        modeBtn.classList.remove('btn', 'btn-outline-light');
+        modeBtn.classList.add('btn', 'btn-outline-dark');
+        hobbyBtn.classList.remove('btn', 'btn-outline-light');
+        hobbyBtn.classList.add('btn', 'btn-outline-dark');
+        submitBtn.classList.remove('btn', 'btn-outline-light');
+        submitBtn.classList.add('btn', 'btn-outline-dark');
     }
 }
 
