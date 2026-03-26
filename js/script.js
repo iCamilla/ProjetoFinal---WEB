@@ -15,6 +15,7 @@ let counterDisplay = document.getElementById('counterDisplay');
 let submitBtn = document.getElementById('SubmitBtn');
 let resetBtn = document.getElementById('resetBtn');
 let allBtn = document.querySelectorAll('.someBtn');
+let myTitle = document.querySelector('.navbar-brand');
 
 
 
@@ -30,6 +31,7 @@ function changeDarkMode() {
     if (myBody.classList.contains('bg-light', 'text-dark')) {
         myBody.classList.remove('bg-light', 'text-dark');
         myBody.classList.add('bg-dark', 'text-light');
+        myTitle.style.color = 'white';
         for (let btn of allBtn) {
             btn.classList.remove('btn', 'btn-outline-dark');
             btn.classList.add('btn', 'btn-outline-light');
@@ -37,6 +39,7 @@ function changeDarkMode() {
     } else {
         myBody.classList.remove('bg-dark', 'text-light');
         myBody.classList.add('bg-light', 'text-dark');
+        myTitle.style.color = 'black';
         for (let btn of allBtn) {
             btn.classList.remove('btn', 'btn-outline-light');
             btn.classList.add('btn', 'btn-outline-dark');
