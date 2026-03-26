@@ -21,6 +21,12 @@ h2, h4 {
 img {
     border-radius: 10px;
 }
+.card-group
+{
+  display: flex;                
+  justify-content: center;      
+  align-items: center;                     
+}
 
 #catContainer img, #dogContainer img, #birdContainer img{
     width: 100%;
