@@ -14,13 +14,8 @@ body {
 
 
 h2, h4 {
-    font-family: monospace;
     text-align: center;
     font-weight: 100;
-    text-decoration-line: underline;
-    text-decoration-style: wavy;
-    text-decoration-color: rgb(215, 144, 236);
-    text-transform: uppercase;
 }
 
 img {

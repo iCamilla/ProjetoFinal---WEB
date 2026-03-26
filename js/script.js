@@ -145,43 +145,43 @@ birdApiBtn.addEventListener('click', function () {
             birdContainer.appendChild(img);
         })
 });
-    modeBtn.addEventListener('click', changeDarkMode);
-    imgBtn.addEventListener('click', changeImg);
-    hobbyBtn.addEventListener('click', addHobby);
-    myBTN.addEventListener('click', changeBackground);
+modeBtn.addEventListener('click', changeDarkMode);
+imgBtn.addEventListener('click', changeImg);
+hobbyBtn.addEventListener('click', addHobby);
+myBTN.addEventListener('click', changeBackground);
 
-    let count = localStorage.getItem('profileCount') || 0;
-    counterDisplay.innerText = `Perfil atualizado ${count} vezes`;
+let count = localStorage.getItem('profileCount') || 0;
+counterDisplay.innerText = `Profile updated ${count} times`;
 
-    let resetBtn = document.getElementById('resetBtn');
+let resetBtn = document.getElementById('resetBtn');
 
-    resetBtn.addEventListener('click', function () {
-        myName.innerText = 'Meu Portifólio';
-        myDescription.innerText = 'Sou estudante de Programação Low Code...';
-        banner.src = 'images/imagePrincipal.jpg';
-        mybackground.style.backgroundColor = '';
+resetBtn.addEventListener('click', function () {
+    myName.innerText = 'Portfoli-Oh!';
+    myDescription.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, laboriosam exercitationem nemo laborum dolorem voluptates corrupti esse cum doloremque error facilis molestiae soluta consectetur ducimus deserunt, ad odio, accusamus non.';
+    banner.src = 'images/imagePrincipal.jpg';
+    mybackground.style.backgroundColor = '';
 
-        myList.innerHTML = `
+    myList.innerHTML = `
         <li>SQL</li>
         <li>Programação WEB</li>
         <li>Desenvolvimento de Software</li>
     `;
 
-        profileForm.reset();
+    profileForm.reset();
 
-        document.body.classList.remove('bg-dark', 'text-light');
-        document.body.classList.add('bg-light', 'text-dark');
-        imgBtn.classList.remove('btn', 'btn-outline-light');
-        imgBtn.classList.add('btn', 'btn-outline-dark');
-        modeBtn.classList.remove('btn', 'btn-outline-light');
-        modeBtn.classList.add('btn', 'btn-outline-dark');
-        hobbyBtn.classList.remove('btn', 'btn-outline-light');
-        hobbyBtn.classList.add('btn', 'btn-outline-dark');
-        submitBtn.classList.remove('btn', 'btn-outline-light');
-        submitBtn.classList.add('btn', 'btn-outline-dark');
+    document.body.classList.remove('bg-dark', 'text-light');
+    document.body.classList.add('bg-light', 'text-dark');
+    imgBtn.classList.remove('btn', 'btn-outline-light');
+    imgBtn.classList.add('btn', 'btn-outline-dark');
+    modeBtn.classList.remove('btn', 'btn-outline-light');
+    modeBtn.classList.add('btn', 'btn-outline-dark');
+    hobbyBtn.classList.remove('btn', 'btn-outline-light');
+    hobbyBtn.classList.add('btn', 'btn-outline-dark');
+    submitBtn.classList.remove('btn', 'btn-outline-light');
+    submitBtn.classList.add('btn', 'btn-outline-dark');
 
-        localStorage.setItem('profileCount', 0);
-        count = 0;
-        counterDisplay.innerText = 'Perfil atualizado 0 vezes';
-    });
+    localStorage.setItem('profileCount', 0);
+    count = 0;
+    counterDisplay.innerText = 'Profile updated 0 times';
+});
 
