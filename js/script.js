@@ -77,10 +77,10 @@ document.addEventListener('keydown', function (event) {
 })
 
 
-profileForm.addEventListener('submit', function (event) {
+submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
 
-    let data = new FormData(this);
+    let data = new FormData(profileForm);
 
     let nome = data.get('nome');
     let frase = data.get('frase');
@@ -171,6 +171,14 @@ birdApiBtn.addEventListener('click', function () {
 
         document.body.classList.remove('bg-dark', 'text-light');
         document.body.classList.add('bg-light', 'text-dark');
+        imgBtn.classList.remove('btn', 'btn-outline-light');
+        imgBtn.classList.add('btn', 'btn-outline-dark');
+        modeBtn.classList.remove('btn', 'btn-outline-light');
+        modeBtn.classList.add('btn', 'btn-outline-dark');
+        hobbyBtn.classList.remove('btn', 'btn-outline-light');
+        hobbyBtn.classList.add('btn', 'btn-outline-dark');
+        submitBtn.classList.remove('btn', 'btn-outline-light');
+        submitBtn.classList.add('btn', 'btn-outline-dark');
 
         localStorage.setItem('profileCount', 0);
         count = 0;
