@@ -27,3 +27,9 @@ img {
     height: 100%;
     object-fit: cover;
 }
+
+.navbar {
+    border: 1px solid #f1e9e9;
+    border-radius: 10px;
+    padding: 10px;
+}
