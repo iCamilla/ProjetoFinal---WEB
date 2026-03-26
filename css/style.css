@@ -100,3 +100,10 @@ img {
   white-space: nowrap;
 }
 
+#nameInput:focus,
+#presentationQuote:focus,
+#corFavorita:focus,
+#photoUrl:focus {
+    border-color: rgb(205, 134, 223);
+    box-shadow: 0 0 5px rgb(205, 134, 223);
+}

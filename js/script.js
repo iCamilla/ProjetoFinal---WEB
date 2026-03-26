@@ -176,6 +176,10 @@ resetBtn.addEventListener('click', function () {
     hobbyBtn.classList.add('btn', 'btn-outline-dark');
     submitBtn.classList.remove('btn', 'btn-outline-light');
     submitBtn.classList.add('btn', 'btn-outline-dark');
+    myBTN.classList.remove('btn', 'btn-outline-light');
+    myBTN.classList.add('btn', 'btn-outline-dark');
+    resetBtn.classList.remove('btn', 'btn-outline-light');
+    resetBtn.classList.add('btn', 'btn-outline-dark');
 
     localStorage.setItem('profileCount', 0);
     count = 0;
